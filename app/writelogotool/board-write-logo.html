@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf8">
+    <style>
+      input[type=radio] {
+          vertical-align:middle;
+      }
+      input[type=file] {
+        display: block;
+      }
+      #img {
+        width: 280px;
+        height: 200px;
+        border: 1px solid black;
+        margin-top: 10px;
+        margin-left: 10px;
+        <!-- margin-right: 10px; -->
+      }
+      #img2 {
+        width: 280px;
+        height: 200px;
+        border: 1px solid black;
+        margin-top: 10px;
+        margin-left: 20px;
+        <!-- margin-right: 20px; -->
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="previewType" value="fileReader" onChange="onPreviewTypeChange()">fileReader
+    <input type="radio" name="previewType" value="createURL" onChange="onPreviewTypeChange()">createURL
+    <hr>
+    <input type="file" id="imgFile" onChange="imgChange()" value="images/black.png">
+    <img id="img">
+    <img id="img2">
+    <script>
+      var previewTypes = document.getElementsByName("previewType");
+      var imgFile = document.getElementById("imgFile");
+      var img = document.getElementById("img");
+ 
+      function getPreviewType() {
+        for(var i=0; i<previewTypes.length; i++) {
+          if(previewTypes[i].checked) {
+            return previewTypes[i].value;
+          }
+        }
+      }
+ 
+      function onPreviewTypeChange() {
+        imgChange(event.target.value);
+      }
+ 
+      function imgChange(type) {
+        img.src = "";
+        var files = imgFile.files;
+        console.log(files);
+        if(!files || files.length === 0) {
+          return;
+        }
+        var file = files[0];
+        if(!type) {
+          type = getPreviewType();
+          if(!type) {
+            return;
+          }
+        }
+        switch(type) {
+          case "fileReader":
+            var fr = new FileReader();
+            fr.onload = function(progressEvent) {
+              console.log(progressEvent);
+              img.src = progressEvent.target.result;
+            }
+            fr.readAsDataURL(file);
+            break;
+          case "createURL":
+            img.onload = function() {
+                 URL.revokeObjectURL(img.src);
+            }
+            img.src = URL.createObjectURL(file);
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

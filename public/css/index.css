@@ -1,0 +1,36 @@
+/*进度条*/
+.progress {
+    margin-bottom: 15px;
+}
+/* 留言板媒体查询大小 */
+.wh64 {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+/* 提交留言按钮 */
+.mar_t {
+    margin-top: 10px;
+}
+/* 联系手册margin-top:13px */
+.mar_t4 {
+    margin-top: 4px;
+}
+/* pageheader */
+.page-header {
+    margin-top: 0;
+}
+.page-header h1 {
+    margin: 0;
+    font-size: 16px;
+}
+/* padding */
+.areaStyle {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+/* margin-left */
+.mar_l {
+    margin-left: 15px;
+}

@@ -1,0 +1,13 @@
+body {
+    font-family:'Microsoft YaHei';
+    font-size: 14px;
+}
+ul,ol {
+    list-style: none;
+}
+.f_l {
+    float: left;
+}
+.f_r {
+    float: right;
+}
