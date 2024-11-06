@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./public/img/FG.png" sizes="32x32">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>FutureTK</title>
+    <!-- Bootstrap -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+  </head>
+
+<body>
+<!--TODO:顶部固定页面导航条-->
+
+<!-- Static navbar -->
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">FutureTK</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./index.html" class="glyphicon glyphicon-home"> 首页</a></li>
+        <li><a href="public/html/firmwaretools.html" class="glyphicon glyphicon-download"> 资料下载</a></li>
+        <li><a href="public/html/SchemeSelection.html" class="glyphicon glyphicon-th-list"> 产品方案</a></li>
+        <li><a href="public/html/onlinetools.html" class="glyphicon glyphicon-th"> 在线工具</a></li>
+      </ul>
+
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<!--<div class="container-fluid">-->
+	<!--<div class="row-fluid">-->
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<!--<h3>网站建设中...</h3>-->
+			<!--<br/>-->
+			<!-- 轮换图 -->
+			<!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
+				 <!--Indicators -->
+			<!--	<ol class="carousel-indicators">-->
+			<!--		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+			<!--		<li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+			<!--		<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+			<!--	</ol>-->
+			
+				 <!--Wrapper for slides -->
+			<!--	<div class="carousel-inner" role="listbox">-->
+			<!--		<div class="item active">-->
+			<!--			<img alt="#" src="public/img/homepage/08d9a55a51cd9a1991ef2fe6efbfc725.jpg" class="img-responsive"/>-->
+			<!--			<div class="carousel-caption">-->
+			<!--			<h4>-->
+			<!--				板卡1-->
+			<!--			</h4>-->
+			<!--			<p>-->
+			<!--				板卡1详细配置特点说明-->
+			<!--			</p>-->
+			<!--		  </div>-->
+			<!--		</div>-->
+			<!--		<div class="item">-->
+			<!--			<img alt="#" src="public/img/homepage/249affcfdf6249638c71bb75d0d80316.jpg" class="img-responsive"/>-->
+			<!--			<div class="carousel-caption">-->
+			<!--				<h4>-->
+			<!--					板卡2-->
+			<!--				</h4>-->
+			<!--				<p>-->
+			<!--					板卡2详细配置特点说明-->
+			<!--				</p>-->
+			<!--			</div>-->
+			<!--		</div>-->
+			<!--		<div class="item">-->
+			<!--			<img alt="#" src="public/img/homepage/e169ef4a9f68611eca3ad9da913002a7.jpg" class="img-responsive"/>-->
+			<!--			<div class="carousel-caption">-->
+			<!--				<h4>-->
+			<!--					板卡3-->
+			<!--				</h4>-->
+			<!--				<p>-->
+			<!--					板卡3详细配置特点说明-->
+			<!--				</p>-->
+			<!--			</div>-->
+			<!--		</div>-->
+			<!--	</div>-->
+			
+				 <!--Controls -->
+			<!--	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+			<!--		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+			<!--		<span class="sr-only">Previous</span>-->
+			<!--	</a>-->
+			<!--	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+			<!--		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+			<!--		<span class="sr-only">Next</span>-->
+			<!--	</a>-->
+			<!--</div>-->
+			<!-- 间隔 -->
+			<!--<br/>-->
+			<!-- 概述 -->
+			<div class="jumbotron">
+				<div class="container">
+					<h2 class="text-center">
+						关于我们
+					</h2>
+					<p class="text-center">
+						提供小家电方案，电视，机顶盒，投影机，广告机等音视频方案软硬件开发。
+					</p>
+					<h6 class="text-center">
+						您的支持是我们最大的动力。
+					</h6>
+				</div>
+			</div>
+			<!-- 预览列表 -->
+			<!--<div class="row">-->
+			<!--	<div class="col-sm-4 col-md-4">-->
+			<!--    	<a class="thumbnail" href="public/html/television.html">-->
+			    		<!--<img alt="300x200" src="public/img/homepage/01ff4332a14081589d5045e488abee45.png" />-->
+			<!--    		<div class="caption">-->
+			<!--        		<h3 class="text-center">软件</h3>-->
+			<!--        		<p>需要提供成熟的芯片方案软件定制服务点我</p>-->
+			<!--    		</div>-->
+			<!--    	</a>-->
+			<!--	</div>-->
+			<!--	<div class="col-sm-4 col-md-4">-->
+			<!--    	<a class="thumbnail" href="public/html/SetTopBox.html">-->
+			    		<!--<img alt="300x200" src="public/img/homepage/55c7fc85dd9938af0d18e7cc57037d48.jpg" />-->
+			<!--    		<div class="caption">-->
+			<!--        		<h3 class="text-center">硬件</h3>-->
+			<!--        		<p>需要提供成熟的芯片方案硬件定制服务点我</p>-->
+			<!--    		</div>-->
+			<!--    	</a>-->
+			<!--	</div>-->
+			<!--	<div class="col-sm-4 col-md-4">-->
+			<!--    	<a class="thumbnail" href="public/html/AdvertisingMachine.html">-->
+			    		<!--<img alt="300x200" src="public/img/homepage/85d8b5cb04ca978aee0d8f9b9a96919c.png" />-->
+			<!--    		<div class="caption">-->
+			<!--        		<h3 class="text-center">其他</h3>-->
+			<!--        		<p>需要提供其他方案定制服务点我</p>-->
+			<!--    		</div>-->
+			<!--    	</a>-->
+			<!--	</div>-->
+			<!--</div>-->
+			
+		</div>
+	</div>
+</div>
+<!--navbar-fixed-top:固定在顶部-->
+<!--navbar-fixed-bottom:固定在底部-->
+<footer class="text-center  bg-primary" style="background-color:#666666;">
+<div class="container">
+	<div class="row">
+		<!-- 芯片品牌 -->
+		<!-- <div class="row" > -->
+			<!-- <h4 class="text-center"> -->
+				<!-- 合作品牌 -->
+			<!-- </h4> -->
+			<!-- <div class="col-xs-2 col-sm-1 col-md-1"> -->
+				<!-- <img alt="#" src="public/img/supplier/mstar.jpeg" class="img-thumbnail"/> -->
+			<!-- </div> -->
+			<!-- <div class="col-xs-2 col-sm-1 col-md-1"> -->
+				<!-- <img alt="#" src="public/img/supplier/realtek.jpg" class="img-thumbnail"/> -->
+			<!-- </div> -->
+			<!-- <div class="col-xs-2 col-sm-1 col-md-1"> -->
+				<!-- <img alt="#" src="public/img/supplier/rockchip.jpeg" class="img-thumbnail"/> -->
+			<!-- </div> -->
+			<!-- <div class="col-xs-2 col-sm-1 col-md-1"> -->
+				<!-- <img alt="#" src="public/img/supplier/RDA.jpeg" class="img-thumbnail"/> -->
+			<!-- </div> -->
+			<!-- <div class="col-xs-2 col-sm-1 col-md-1"> -->
+				<!-- <img alt="#" src="public/img/supplier/ali.jpg" class="img-thumbnail"/> -->
+			<!-- </div> -->
+			<!-- <div class="col-xs-2 col-sm-1 col-md-1"> -->
+				<!-- <img alt="#" src="public/img/supplier/lontium.jpg" class="img-thumbnail"/> -->
+			<!-- </div> -->
+		<!-- </div> -->
+		
+		<h4>联系方式:1941185137@qq.com</h4>
+		<!--<h5>备案号<a href="http://www.beian.miit.gov.cn">赣ICP备20006554号-1</a></h5>-->
+
+	</div>
+</div>
+</footer>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>-->
+    <script charset="utf-8" type="text/javascript" src="public/js/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>-->
+    <script charset="utf-8" type="text/javascript" src="public/js/bootstrap.min.js"></script>
+    <!--TODO:底部固定页面导航条-->
+</body>
+</html>
